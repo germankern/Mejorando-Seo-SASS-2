@@ -1,0 +1,13 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@import "./componentes/variables";
+@import "./componentes/mixins";
+@import "./componentes/extend";
+@import "./partials/header";
+@import "./partials/nav";
+@import "./partials/mainSec";
+@import "./partials/footer";

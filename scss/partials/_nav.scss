@@ -1,0 +1,39 @@
+nav {
+    background-color: $colorPri;
+    padding: $paddinM;
+    ul{ 
+        @include flexRowCenter;
+        padding: $paddingS;
+        margin: 0px $paddinM;
+        li {
+        list-style: none;
+        padding: $paddingS;
+        margin: 0px $paddinM;
+            a {
+            @extend %botonLink;
+            &:hover {
+                background-color: bisque;
+                border-radius: $paddinM;
+            }
+            }
+        }
+    }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 500px) {
+    nav {
+        padding: 0;
+        ul{
+            margin: 0;
+            li {
+                margin: $paddingS;
+                a {
+                    padding: $paddingS;
+                    margin: 0;
+                    font-size: $fontH3;
+                }
+            }
+        }
+    }
+}

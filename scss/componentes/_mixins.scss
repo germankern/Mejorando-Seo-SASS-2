@@ -1,0 +1,16 @@
+
+@mixin flexItems ($disp,$fDir,$justC,$alignI) {
+    display: $disp;
+    flex-direction: $fDir;
+    justify-content: $justC;
+    align-items: $alignI;
+}
+
+
+@mixin flexRowCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+

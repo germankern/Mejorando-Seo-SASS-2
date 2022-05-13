@@ -1,0 +1,25 @@
+footer {
+    text-align: center;
+    font-size: $paddinXL;
+    background-color: $bgcDark;
+    padding: $paddinXL;
+    color: $bgcLight;
+    a {
+        text-decoration: none;
+        font-size: 20px;
+        margin: $paddinM;
+        color: $bgcSucces;
+        &:hover {
+            border-bottom: 1px solid white;
+        }
+    }
+    h5 {margin-top: $paddingS}
+}
+/* RESPONSIVE */
+@media screen and (max-width: 500px) {
+    footer {
+        div{
+            @include flexItems(flex,column,center,center);
+        }
+    }
+}
